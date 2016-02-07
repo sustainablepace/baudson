@@ -1,83 +1,208 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Christoph Baudson</title>
-<link rel="stylesheet" href="foundation.min.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christoph Baudson</title>
+  <style>
+    /* structural */
+    aside {
+      float:left;
+      width: 33%;
+    }
+    section {
+      float:left;
+      width: 66%;
+      margin-right: 1%;
+    }
+    article {
+      width: 50%;
+      float: left;
+    }
+    main, header, footer {
+      width: 768px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    /* font */
+    body {
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      line-height: 1;
+      font-size: 90%;
+      color: #444;
+    }
+    header, footer, aside {
+      color: #222;
+    }
+
+    /* colors */
+    body {
+      background-color: #f7f7f7;
+    }
+    header, footer {
+      background-color: #ddd;
+    }
+    main {
+      background-color: #fff;
+    }
+    aside{
+      background-color: #eee;
+    }
+    a {
+      color: #222;
+    }
+    aside a, header a, footer a {
+      color: #000;
+    }
+
+    /* other */
+    header {
+      text-align: center;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom: 1px solid #444;
+    }
+    header > img {
+      border-radius: 50%;
+    }
+    aside {
+      border-radius: 30px;
+    }
+    aside ul.social {
+        list-style: none;
+        padding-left: 0;
+    }
+    aside ul.social li {
+        display: inline;
+    }
+    aside ul.social img {
+        width: 32px;
+    }
+    article > p, article > h3 {
+        width: 90%;
+    }
+    section img {
+        width: 90%;
+        border: 1px solid #ddd;
+    }
+    section > div {
+      margin-bottom: 1.5em;
+      overflow: hidden;
+      clear: left;
+    }
+    header, footer, main, aside > div {
+      padding: 20px;
+    }
+    footer {
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-top: 1px solid #444;
+    }
+
+  </style>
 </head>
 <body>
-<div class="off-canvas-wrapper">
-<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-<div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-<div class="row column">
-<br>
-<img class="thumbnail" src="profile.jpg">
-<h5>Christoph Baudson</h5>
-<p>If you want to get in touch, here's my <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x679F74BA3937A152">public key</a>.</p>
-</div>
-</div>
-<div class="off-canvas-content" data-off-canvas-content>
-<div class="title-bar hide-for-large">
-<div class="title-bar-left">
-<button class="menu-icon" type="button" data-open="my-info"></button>
-<span class="title-bar-title">Christoph Baudson</span>
-</div>
-</div>
-<div class="row small-up-2 medium-up-3 large-up-4">
-<div class="column">
-<a href="http://sustainablepace.net/"><img class="thumbnail" src="sustainablepace.png"></a>
-<h5>Sustainable Pace</h5>
-<p>
-Blogger about well-being, curiosity and experiments. 
-</p>
-</div>
-<div class="column">
-<a href="http://blog.baudson.de/"><img class="thumbnail" src="humble.png"></a>
-<h5>The humble developer</h5>
-<p>
-Blogger journaling things learnt along the way.
-</p>
-</div>
-<div class="column">
-<a href="http://www.bonnagile.de/"><img class="thumbnail" src="bonnagile.png"></a>
-<h5>Bonn Agile</h5>
-<p>
-Co-organizer of an agile, software craftsmenship and tech meetup in Bonn, Germany.
-</p>
-</div>
-<div class="column">
-<a href="http://www.meetup.com/Filmfreunde-Bonn/"><img class="thumbnail" src="filmfreunde.png"></a>
-<h5>Filmfreunde Bonn</h5>
-<p>
-Founder of a meetup for movie lovers in Bonn, Germany.
-</p>
-</div>
-</div>
-<hr>
-<div class="row">
-<div class="medium-12 columns">
-<h3>Contact Me</h3>
-<ul class="menu">
-<li><a href="https://www.facebook.com/profile.php?id=100008162026580"><img src="icons/facebook.png" alt="Facebook" /></a></li>
-<li><a href="https://twitter.com/sustainablepace"><img src="icons/twitter.png" alt="Twitter" /></a></li>
-<li><a href="https://www.xing.com/profile/Christoph_Baudson"><img src="icons/xing.png" alt="Xing" /></a></li>
-<li><a href="https://linkedin.com/in/christoph-baudson-2ab15778"><img src="icons/linkedin.png" alt="Linked In" /></a></li>
-<li><a href="http://stackoverflow.com/users/705616/sustainablepace"><img src="icons/overflow.png" alt="Stack Overflow" /></a></li>
-<li><a href="https://github.com/sustainablepace"><img src="icons/github.png" alt="Github" /></a></li>
-</ul>
-<p><small>
+<header>
+  <img class="thumbnail" src="img/profile.jpg">
+  <h1>Christoph Baudson</h1>
+  <p>
+    Lives in Bonn, Germany. By day, software developer at <a href="https://www.rewe-group.com/de/unternehmen/vertriebslinien/rewe-digital">REWE Digital GmbH</a>. By night, see below.
+  </p>
+</header>
+<main>
+  <section>
+    <div>
+      <h2>Blogs</h2>
+      <article>
+        <p>
+          <a href="http://sustainablepace.net/"><img class="thumbnail" src="img/sustainablepace.png"></a>
+        </p>
+        <h3>Sustainable Pace</h3>
+        <p>
+        Well-being, curiosity and experiments. 
+        </p>
+      </article>
+      <article>
+        <p>
+          <a href="http://blog.baudson.de/"><img class="thumbnail" src="img/humble.png"></a>
+        </p>
+        <h3>The humble developer</h3>
+        <p>
+          Journaling things learnt along the way.
+        </p>
+      </article>
+    </div>
+    <div>
+      <h2>Local engagement</h2>
+      <article>
+        <p>
+          <a href="http://www.bonnagile.de/"><img class="thumbnail" src="img/bonnagile.png"></a>
+        </p>
+        <h3>Bonn Agile Meetup</h3>
+        <p>
+          Co-organizer of an agile, software craftsmenship and tech meetup in Bonn, Germany.
+        </p>
+      </article>
+  
+      <article>
+        <p>
+          <a href="http://www.meetup.com/Filmfreunde-Bonn/"><img class="thumbnail" src="img/filmfreunde.jpg"></a>
+        </p>
+        <h3>Filmfreunde Bonn</h3>
+        <p>
+          Founder of a meetup for movie lovers in Bonn, Germany.
+        </p>
+      </article>
+    </div>
+    <div>
+      <h2>Creative work</h2>
+      <article>
+        <p>
+          <a href="https://www.youtube.com/watch?v=DORv-TlCkfE"><img class="thumbnail" src="img/tempolimits.jpg"></a>
+        </p>
+        <h3>The Tempolimits</h3>
+        <p>
+          The band no longer exists. I was a singer, guitarist and songwriter.
+        </p>
+      </article>
+  
+    </div>
+  </section>
+  <aside>
+    <div>
+      <h2>Contact</h2>
+      <h3>Email</h3>
+      <p>
+        Send me an <a href="mailto:christoph@baudson.de">email</a>. Use my <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x679F74BA3937A152">public key</a> for encrytion.
+      </p>
+      <h3>Postal</h3>
+      <p>
+        Christoph Baudson<br>
+        Adolfstr. 104<br>
+        53111 Bonn<br>
+        Germany<br>
+        <a href="tel:+49 228 9140959">Phone</a>
+      </p>
+      <h3>Social media</h3>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/profile.php?id=100008162026580"><img src="icons/facebook.png" alt="Facebook" /></a></li>
+        <li><a href="https://twitter.com/sustainablepace"><img src="icons/twitter.png" alt="Twitter" /></a></li>
+        <li><a href="https://www.xing.com/profile/Christoph_Baudson"><img src="icons/xing.png" alt="Xing" /></a></li>
+        <li><a href="https://linkedin.com/in/christoph-baudson-2ab15778"><img src="icons/linkedin.png" alt="Linked In" /></a></li>
+        <li><a href="http://stackoverflow.com/users/705616/sustainablepace"><img src="icons/overflow.png" alt="Stack Overflow" /></a></li>
+        <li><a href="https://github.com/sustainablepace"><img src="icons/github.png" alt="Github" /></a></li>
+      </ul>
+    </div>
+  </aside>
+
+</main>
+
+<footer>
+<small>
+© <a href="http://sustainablepace.net/author">Christoph Baudson</a><br>
 Social Flat Rounded Rects by <a href="https://www.iconfinder.com/iconsets/social-flat-rounded-rects">Aha-Soft Team</a> (<a href="http://creativecommons.org/licenses/by/3.0/" />CC-BY</a>).
-</small></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-<script>
-      $(document).foundation();
-    </script>
+</small>
+</footer>
 </body>
 </html>
