@@ -1,252 +1,348 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Christoph Baudson</title>
-  <style>
-    @media (orientation:landscape) and (min-device-height:768px) and (max-device-height:1024px), screen and (min-width: 769px) {
-        aside {
-          float:left;
-          width: 33%;
-          margin: 0;
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Christoph Baudson</title>
+    <style>
+        @media (orientation: landscape) and (min-device-height: 768px) and (max-device-height: 1024px), screen and (min-width: 769px) {
+            aside {
+                float: left;
+                width: 33%;
+                margin: 0;
+            }
+
+            section {
+                float: left;
+                width: 67%;
+            }
+
+            article {
+                width: 46%;
+                margin-right: 4%;
+                float: left;
+            }
+
+            header {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            footer {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
         }
-        section {
-          float:left;
-          width: 67%;
+
+        @media screen and (max-width: 799px) {
+            aside {
+                margin: -20px;
+            }
+
+            section > div {
+                max-width: 400px;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            aside {
+                border-top: 1px solid #ddd;
+            }
+
+            article {
+                margin-bottom: 50px;
+            }
         }
-        article {
-          width: 46%;
-          margin-right: 4%;
-          float: left;
+
+        main, header, footer {
+            max-width: 768px;
+            margin: 0 auto;
+            overflow: hidden;
         }
-        header {
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
-        }
-        footer {
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-        }
-    }
-    @media screen and (max-width: 799px) {
-        aside {
-          margin: -20px;
-        }
-        section > div {
-          max-width: 400px;
-        }
+
+        /* font */
         body {
-          margin: 0;
-          padding: 0;
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            line-height: 1;
+            font-size: 90%;
+            color: #444;
         }
+
+        header, footer, aside {
+            color: #222;
+        }
+
+        /* colors */
+        body {
+            background-color: #f7f7f7;
+        }
+
+        header, footer {
+            background-color: #ddd;
+        }
+
+        main {
+            background-color: #fff;
+        }
+
         aside {
-          border-top: 1px solid #ddd;
+            background-color: #eee;
         }
-        article {
-          margin-bottom: 50px;
+
+        a {
+            color: #222;
         }
-    }
 
-    main, header, footer {
-      max-width: 768px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
+        aside a, header a, footer a {
+            color: #000;
+        }
 
-    /* font */
-    body {
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      line-height: 1;
-      font-size: 90%;
-      color: #444;
-    }
-    header, footer, aside {
-      color: #222;
-    }
+        /* other */
+        header {
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
 
-    /* colors */
-    body {
-      background-color: #f7f7f7;
-    }
-    header, footer {
-      background-color: #ddd;
-    }
-    main {
-      background-color: #fff;
-    }
-    aside{
-      background-color: #eee;
-    }
-    a {
-      color: #222;
-    }
-    aside a, header a, footer a {
-      color: #000;
-    }
+        header > img {
+            border-radius: 50%;
+        }
 
-    /* other */
-    header {
-      text-align: center;
-      border-bottom: 1px solid #444;
-    }
-    header > img {
-      border-radius: 50%;
-    }
+        aside ul.social {
+            list-style: none;
+            padding-left: 0;
+        }
 
-    aside ul.social {
-        list-style: none;
-        padding-left: 0;
-    }
-    aside ul.social li {
-        display: inline;
-    }
-    aside ul.social img {
-        width: 60px;
-    }
+        aside ul.social li {
+            display: inline;
+        }
 
-    section > div {
-      margin: 0 auto;
-    }
+        aside ul.social img {
+            width: 60px;
+        }
 
-    section img.thumbnail {
-        max-width: 99%;
-        border: 1px solid #ddd;
-    }
-    section > div {
-      margin-bottom: 1.5em;
-      overflow: hidden;
-      clear: left;
-    }
-    header, footer, main, aside > div {
-      padding: 20px;
-    }
-    footer {
-      border-top: 1px solid #444;
-    }
+        section > div {
+            margin: 0 auto;
+        }
 
-  </style>
+        section img.thumbnail {
+            max-width: 99%;
+            border: 1px solid #ddd;
+        }
+
+        section div {
+            margin-bottom: 1.5em;
+            overflow: hidden;
+            clear: left;
+        }
+
+        header, footer, main, aside > div {
+            padding: 20px;
+        }
+
+        footer {
+            border-top: 1px solid #444;
+        }
+
+        ul.talklist {
+            padding-left: 0;
+        }
+
+        ul.talklist > li {
+            padding-bottom: 1em;
+            list-style-type: none;
+        }
+        section h2 {
+            text-align: center;
+            padding-top: 1em;
+            font-size: 250%;
+        }
+
+    </style>
 </head>
 <body>
 <header>
-  <img class="thumbnail" src="img/profile.jpg">
-  <h1>Christoph Baudson</h1>
-  <p>
-    Lives in Bonn, Germany. By day, software developer at <a href="https://www.rewe-digital.com/">REWE Digital GmbH</a>. By night, see below.
-  </p>
-  <p>
-    Currently enthusiastic about Domain Driven Design and Working Out Lout.
-  </p>
+    <img class="thumbnail" src="img/profile.jpg">
+    <h1>Christoph Baudson</h1>
+    <p>
+        Lives in Bonn, Germany. By day, software developer at <a href="https://www.rewe-digital.com/">REWE Digital
+        GmbH</a>. By night, see below.
+    </p>
+    <p>
+        Currently enthusiastic about Domain Driven Design and Working Out Lout.
+    </p>
 </header>
 <main>
-  <section>
-    <div>
-      <h2>Blogs</h2>
-      <article>
-        <p>
-          <a href="http://sustainablepace.net/"><img class="thumbnail" src="img/sustainablepace.png"></a>
-        </p>
-        <h3>Sustainable Pace</h3>
-        <p>
-        Well-being, curiosity and experiments. 
-        </p>
-      </article>
-      <article>
-        <p>
-          <a href="http://blog.baudson.de/"><img class="thumbnail" src="img/humble.png"></a>
-        </p>
-        <h3>The humble developer</h3>
-        <p>
-          Journaling things learnt along the way.
-        </p>
-      </article>
-    </div>
-    <div>
-      <h2>Local engagement</h2>
-      <article>
-        <p>
-          <a href="https://www.meetup.com/Domain-Driven-Design-Koln-Bonn"><img class="thumbnail" src="img/ddd.png"></a>
-        </p>
-        <h3>Domain Driven Design Cologne/Bonn</h3>
-        <p>
-          Organizer of a Domain Driven Design meetup in Cologne, Germany.
-        </p>
-      </article>
+    <section>
+        <div>
+            <div>
+                <h2>Talks and workshops</h2>
+                Incomplete...
+                <h3>2020</h3>
+                <ul class="talklist">
+                    <li>
+                        <a href="https://www.meetup.com/de-DE/Domain-Driven-Design-Koln-Bonn/events/267807118/"
+                           target="_blank">Mar 2</a> - DDD Cologne - Hexagon Architecture in the real world
+                        [<a href="slides/2020.03.02.DDD.Cologne.Hexagon.Architecture.in.the.real.world.pdf"
+                            target="_blank">Slides</a>]
+                    </li>
+                    <li>
+                        <a href="https://www.meetup.com/de-DE/Bonn-Agile/events/268040731/" target="_blank">Feb 18</a> -
+                        Bonn Agile - Working Out Loud
+                        [<a href="slides/2020.02.18.Bonn.Agile.Working.Out.Loud.pdf" target="_blank">Slides</a>]
+                    </li>
+                </ul>
+                <h3>2018</h3>
+                <ul class="talklist">
+                    <li>
+                        <a href="https://www.meetup.com/de-DE/Domain-Driven-Design-Ruhrgebiet/events/245082721/"
+                           target="_blank">Jan 16</a> - DDD Ruhr - Domain Driven Design at REWE digital
+                        [<a href="slides/2018.01.16.ddd.ruhr.domain.driven.design.at.rewe.digital.pdf" target="_blank">Slides</a>]
+                    </li>
+                </ul>
+                <h3>2017</h3>
+                <ul class="talklist">
+                    <li>
+                        <a href="https://www.meetup.com/de-DE/jugthde/events/241811998/" target="_blank">Oct
+                            18</a> -
+                        JUG Thüringen - DDD Renaissance
+                        [<a href="slides/2017.10.18.JUG.Thueringen.Die.DDD.Renaissance.pdf" target="_blank">Slides</a>] [<a href="https://medium.com/jugthde/domain-driven-design-renaissance-event-storming-a193db8ef887" target="_blank">Blog</a>]
+                    </li>
+                    <li>
+                        <a href="https://www.meetup.com/de-DE/grandcentrix-meetups/events/243111788/" target="_blank">Oct
+                            10</a> -
+                        Solution Architecture Cologne - DDD Then and Now
+                        [<a href="slides/2017.10.10.Solution.Architecture.Cologne.DDD.Then.and.Now.pdf" target="_blank">Slides</a>]
+                    </li>
+                    <li>
+                        <a href="https://programm.froscon.de/2017/events/2016.html" target="_blank">Aug
+                            20</a> -
+                        FrOSCon - DDD Then and Now
+                        [<a href="slides/2017.08.20.froscon.ddd.then.and.now.pdf" target="_blank">Slides</a>] [<a href="https://media.ccc.de/v/froscon2017-2016-domain_driven_design_damals_und_heute" target="_blank">Video</a>]
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Local engagement</h2>
+                <article>
+                    <p>
+                        <a href="https://www.meetup.com/Domain-Driven-Design-Koln-Bonn"><img class="thumbnail"
+                                                                                             src="img/ddd.png"></a>
+                    </p>
+                    <h3>Domain Driven Design Cologne/Bonn</h3>
+                    <p>
+                        Organizer of a Domain Driven Design meetup in Cologne, Germany.
+                    </p>
+                </article>
 
-      <article>
-        <p>
-          <a href="http://www.bonnagile.de/"><img class="thumbnail" src="img/bonnagile.png"></a>
-        </p>
-        <h3>Bonn Agile Meetup</h3>
-        <p>
-          Co-organizer of an agile, software craftsmenship and tech meetup in Bonn, Germany.<br><br><br><br>
-        </p>
-      </article>
+                <article>
+                    <p>
+                        <a href="http://www.bonnagile.de/"><img class="thumbnail" src="img/bonnagile.png"></a>
+                    </p>
+                    <h3>Bonn Agile Meetup</h3>
+                    <p>
+                        Co-organizer of an agile, software craftsmenship and tech meetup in Bonn,
+                        Germany.<br><br><br><br>
+                    </p>
+                </article>
 
-      <article>
-        <p>
-          <a href="http://www.meetup.com/Filmfreunde-Bonn/"><img class="thumbnail" src="img/filmfreunde.jpg"></a>
-        </p>
-        <h3>Filmfreunde Bonn</h3>
-        <p>
-          Organizer of a meetup for movie lovers in Bonn, Germany.
-        </p>
-      </article>
-    </div>
-    <div>
-      <h2>Creative work</h2>
-      <article>
-        <p>
-          <a href="https://www.youtube.com/watch?v=DORv-TlCkfE"><img class="thumbnail" src="img/tempolimits.jpg"></a>
-        </p>
-        <h3>The Tempolimits</h3>
-        <p>
-          The band no longer exists. I was a singer, guitarist and songwriter.
-        </p>
-      </article>
-  
-    </div>
-  </section>
-  <aside>
-    <div>
-      <h2>Impressum und ViSdP</h2>
+                <article>
+                    <p>
+                        <a href="http://www.meetup.com/Filmfreunde-Bonn/"><img class="thumbnail"
+                                                                               src="img/filmfreunde.jpg"></a>
+                    </p>
+                    <h3>Filmfreunde Bonn</h3>
+                    <p>
+                        Organizer of a meetup for movie lovers in Bonn, Germany.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <h2>Blogs</h2>
+                <article>
+                    <p>
+                        <a href="http://sustainablepace.net/"><img class="thumbnail" src="img/sustainablepace.png"></a>
+                    </p>
+                    <h3>Sustainable Pace</h3>
+                    <p>
+                        Well-being, curiosity and experiments.
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <a href="http://blog.baudson.de/"><img class="thumbnail" src="img/humble.png"></a>
+                    </p>
+                    <h3>The humble developer</h3>
+                    <p>
+                        Journaling things learnt along the way.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <h2>Creative work</h2>
+                <article>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=DORv-TlCkfE"><img class="thumbnail"
+                                                                                   src="img/tempolimits.jpg"></a>
+                    </p>
+                    <h3>The Tempolimits</h3>
+                    <p>
+                        The band no longer exists. I was a singer, guitarist and songwriter.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div>
+            <h2>Impressum und ViSdP</h2>
 
-      <p>
-        Christoph Baudson<br>
-        Adolfstr. 104<br>
-        53111 Bonn<br>
-        Germany<br>
-        <a href="tel:+49 228 9140959">Phone</a>
-      </p>
+            <p>
+                Christoph Baudson<br>
+                Adolfstr. 104<br>
+                53111 Bonn<br>
+                Germany<br>
+                <a href="tel:+49 228 9140959">Phone</a>
+            </p>
 
-      <p>
-        E-Mail: christoph (at) baudson (punkt) de<br><br>
-        Use my <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x679F74BA3937A152">public key</a> for encrytion.
-      </p>
-      <h3>Datenschutzerklärung</h3>
+            <p>
+                E-Mail: christoph (at) baudson (punkt) de<br><br>
+                Use my <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x679F74BA3937A152">public key</a> for
+                encrytion.
+            </p>
+            <h3>Datenschutzerklärung</h3>
 
-      <p>
-        Der Webserver schreibt Logdateien mit den Zugriffen und den IP-Adressen der Zugreifer. Diese dienen der Fehlersuche im Krisenfall und werden ansonsten nicht ausgewertet. Da es hier keine Benutzerkonten und keine Tracking-Cookies o.ä. gibt, betrachte ich diese Logdateien nicht als personenbezogen. Abgesehen davon werden keine Daten erhoben, gespeichert oder ausgewertet.
-      </p>
-      <h3>Social media</h3>
-      <ul class="social">
-        <li><a href="https://twitter.com/sustainablepace"><img src="social/twitter.png" alt="Twitter" /></a></li>
-        <li><a href="https://www.xing.com/profile/Christoph_Baudson"><img src="social/xing.png" alt="Xing" /></a></li>
-        <li><a href="https://linkedin.com/in/christoph-baudson-2ab15778"><img src="social/linkedin.png" alt="Linked In" /></a></li>
-        <li><a href="http://stackoverflow.com/users/705616/sustainablepace"><img src="social/overflow.png" alt="Stack Overflow" /></a></li>
-        <li><a href="https://github.com/sustainablepace"><img src="social/github.png" alt="Github" /></a></li>
-      </ul>
-    </div>
-  </aside>
+            <p>
+                Der Webserver schreibt Logdateien mit den Zugriffen und den IP-Adressen der Zugreifer. Diese dienen der
+                Fehlersuche im Krisenfall und werden ansonsten nicht ausgewertet. Da es hier keine Benutzerkonten und
+                keine Tracking-Cookies o.ä. gibt, betrachte ich diese Logdateien nicht als personenbezogen. Abgesehen
+                davon werden keine Daten erhoben, gespeichert oder ausgewertet.
+            </p>
+            <h3>Social media</h3>
+            <ul class="social">
+                <li><a href="https://twitter.com/sustainablepace"><img src="social/twitter.png" alt="Twitter"/></a></li>
+                <li><a href="https://www.xing.com/profile/Christoph_Baudson"><img src="social/xing.png" alt="Xing"/></a>
+                </li>
+                <li><a href="https://linkedin.com/in/christoph-baudson-2ab15778"><img src="social/linkedin.png"
+                                                                                      alt="Linked In"/></a></li>
+                <li><a href="http://stackoverflow.com/users/705616/sustainablepace"><img src="social/overflow.png"
+                                                                                         alt="Stack Overflow"/></a></li>
+                <li><a href="https://github.com/sustainablepace"><img src="social/github.png" alt="Github"/></a></li>
+            </ul>
+        </div>
+    </aside>
 
 </main>
 
 <footer>
-<small>
-© Christoph Baudson<br>
-Social Flat Rounded Rects by <a href="https://www.iconfinder.com/iconsets/social-flat-rounded-rects">Aha-Soft Team</a> (<a href="http://creativecommons.org/licenses/by/3.0/" />CC-BY</a>).
+    <small>
+        © Christoph Baudson<br>
+        Social Flat Rounded Rects by <a href="https://www.iconfinder.com/iconsets/social-flat-rounded-rects">Aha-Soft
+        Team</a> (<a href="http://creativecommons.org/licenses/by/3.0/"/>CC-BY</a>).
 
-</small>
+    </small>
 </footer>
 </body>
 </html>
